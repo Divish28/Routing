@@ -18,7 +18,7 @@ function Login() {
             </div>
         </form>
         <div>
-            <Link to={"/Signup"}> New User </Link>
+            <Link to={"Signup"}> New User </Link>
         </div>
     </div>
   )

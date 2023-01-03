@@ -16,15 +16,17 @@ function App() {
     <div>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<Home/>}></Route>
-        <Route path='/Home' element={<Home/>}></Route>
-        <Route path='/Mens' element={<Mens/>}></Route>
-        <Route path='/Womens' element={<Womens/>}></Route>
-        <Route path='/Kids' element={<Kids/>}></Route>
-        <Route path='/Login' element={<Login/>}></Route>
-        <Route path='/Signup' element={<Signup/>}></Route>
-        <Route path='/Order' element={<Order/>}></Route>
-        <Route path='*' element={<NoUrl/>}></Route>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Home' element={<Home/>}/>
+        <Route path='/Mens' element={<Mens/>}/>
+        <Route path='/Womens' element={<Womens/>}/>
+        <Route path='/Kids' element={<Kids/>}/>
+        <Route path='/Login' element={<Login/>}>
+          <Route index element={<Signup/>}/>
+        </Route>
+        <Route path='/Signup' element={<Signup/>}/>
+        <Route path='/Order' element={<Order/>}/>
+        <Route path='*' element={<NoUrl/>}/>
       </Routes>
       {/* <Navbar/>
       <Home/> */}
