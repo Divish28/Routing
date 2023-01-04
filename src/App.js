@@ -25,7 +25,7 @@ function App() {
           <Route index element={<Signup/>}/>
         </Route>
         <Route path='/Signup' element={<Signup/>}/>
-        <Route path='/Order' element={<Order/>}/>
+        <Route path='Order' element={<Order/>}/>
         <Route path='*' element={<NoUrl/>}/>
       </Routes>
       {/* <Navbar/>
