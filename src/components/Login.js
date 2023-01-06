@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 function Login() {
   return (
@@ -19,6 +19,7 @@ function Login() {
         </form>
         <div>
             <Link to={"/Signup"}> New User </Link>
+            <Outlet/>
         </div>
     </div>
   )
